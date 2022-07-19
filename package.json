@@ -1,0 +1,59 @@
+{
+  "name": "@losslessproject/pool-data",
+  "author": "Harmony zkDAO.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/v4-pool-data.esm.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "url": "https://github.com/losslessproject/pool-data",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "tsdx watch --onSuccess \"yalc push\"",
+    "reinstall": "rm -rf node_modules && yarn install",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "format": "prettier --write \"**/*.{ts,js}\"",
+    "prepare": "yarn build",
+    "publish:public": "yarn publish --access public"
+  },
+  "devDependencies": {
+    "@pooltogether/contract-list-schema": "0.1.4",
+    "ajv": "8.11.0",
+    "husky": "8.0.1",
+    "tsdx": "0.14.1",
+    "tslib": "2.4.0",
+    "typescript": "4.7.3"
+  },
+  "dependencies": {
+    "@pooltogether/v4-mainnet": "1.6.1",
+    "@losslessproject/testnet": "0.1.0"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && yarn lint && yarn test"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": true,
+    "arrowParens": "always",
+    "trailingComma": "none"
+  }
+}
