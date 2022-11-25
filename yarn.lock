@@ -1366,10 +1366,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@losslessproject/testnet@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@losslessproject/testnet/-/testnet-0.1.0.tgz#caf521053091e1efb40b34927b1c08356cf2cd0e"
-  integrity sha512-bFfxP/N5EfWqkOX+ywbDbQOY9yqC7mtuJGDbSX3JTqRi5TZOQkkSqKjRq9DaWc+seNo7vrovebFsDsRfcHsSMw==
+"@losslessproject/testnet@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@losslessproject/testnet/-/testnet-0.1.3.tgz#9e1fad6ffce8bb1e7fc317ec0233765dff806e1e"
+  integrity sha512-mbm+8brsQTOJlXZrBQg6228W+KU5544ccgCfbHSFPM7ookdNS+Xj9w9s9rbeeBETTKwGO4LTdBHruLwi2wvnMg==
   dependencies:
     "@openzeppelin/contracts" "4.4.2"
     "@pooltogether/draw-calculator-js" "1.0.3-beta.4"
